@@ -9,8 +9,8 @@ export class ActionutilisateurService {
 
   constructor(private http:HttpClient) { }
   public data:any
-  public apiurl="http://localhost:6001/getetat"
-  public apiurl2="http://localhost:6001/commande"
+  public apiurl="https://tpiotbackend2-7gpsy0fj0-mignzii.vercel.app/getetat"
+  public apiurl2="https://tpiotbackend2-7gpsy0fj0-mignzii.vercel.app/commande"
   recupone():Observable<any>{
     return this.http.get(this.apiurl)
   }
